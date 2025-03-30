@@ -53,3 +53,43 @@ Inspired by the viral “Siblings or Dating?” meme and subreddit, we wanted to
 ```bash
 git clone https://github.com/AndyyyPhan/SiblingsOrDating.git
 cd SiblingsOrDating
+
+# Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install required packages
+pip install -r requirements.txt
+
+# Create a .env file with your Django secret key
+echo DJANGO_SECRET_KEY=your-secret-key-here > .env
+
+# Run the server
+python manage.py migrate
+python manage.py runserver
+```
+
+---
+
+## 📓 Model Notebook
+
+The full training process is documented in [`SiblingsOrDating.ipynb`](SiblingsOrDating.ipynb), including:
+
+- Data scraping from Reddit
+- Image preprocessing
+- CNN architecture (MobileNetV2)
+- Training + validation performance
+
+---
+
+## 🤝 Collaborators
+
+- [@AndyyyPhan](https://github.com/AndyyyPhan)
+- [@SanjayKarun4444](https://github.com/SanjayKarun4444)
+
+---
+
+## 📜 License
+
+MIT — feel free to use, fork, or remix with credit!
+
