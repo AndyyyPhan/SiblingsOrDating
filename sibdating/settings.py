@@ -21,7 +21,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 import os
-from decouple import config
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "unsafe-default-dev-key")
 
 # SECURITY WARNING: don't run with debug turned on in production!
