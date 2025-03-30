@@ -1,1 +1,55 @@
-# SiblingsOrDating
+# 🧠 Siblings or Dating? | ML-Powered Image Classifier
+
+A web application that predicts whether a pair of people in a photo are **siblings** or **dating**, using a Convolutional Neural Network (CNN) trained on real Reddit data.
+
+> Built for [HooHacks 2025]  
+> Created by [Andy Phan] & [Sanjay Karunamoorthy]
+
+---
+
+## 💡 Inspiration
+
+Inspired by the viral “Siblings or Dating?” meme and subreddit, we wanted to see if a machine learning model could learn to distinguish the subtle visual differences between family and romantic connections — from facial features to posture and expressions.
+
+---
+
+## 🚀 Features
+
+- 🔍 Upload an image and get an instant prediction
+- 🤖 CNN model trained on images scraped from Reddit
+- 📸 Image preview before submitting
+- 🌐 Django + TensorFlow backend
+- 🎨 Bootstrap-styled web interface
+
+---
+
+## 🧪 Tech Stack
+
+| Tool | Purpose |
+|------|---------|
+| 🐍 Python | Backend + ML |
+| 🧠 TensorFlow/Keras | Model training |
+| 🧬 CNN | For image classification |
+| 🌐 Django | Web framework |
+| 🎨 Bootstrap | Frontend styling |
+| 🧾 Pillow | Image preprocessing |
+| 🕵️‍♀️ BeautifulSoup / PRAW | Reddit scraping (optional) |
+
+---
+
+## 🧠 How it works
+
+1. User uploads a photo with two people
+2. The image is resized and preprocessed
+3. The model predicts a probability score (siblings vs. dating)
+4. Result and confidence score are shown
+
+---
+
+## 🛠️ Setup (Local)
+
+1. Clone the repo
+
+```bash
+git clone https://github.com/AndyyyPhan/SiblingsOrDating.git
+cd SiblingsOrDating
